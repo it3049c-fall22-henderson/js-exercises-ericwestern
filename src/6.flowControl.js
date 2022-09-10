@@ -7,7 +7,10 @@
  *    if no number was provided or if the value provided wasn't a number (hint: typeof), return false
  */
 function fizzBuzz(num) {
-  
+  if (isNaN(num))
+    return false;
+
+  return ((num % 3 ? '' : 'fizz') + (num % 5 ? '' : 'buzz') || num);
 }
 
 module.exports = {
