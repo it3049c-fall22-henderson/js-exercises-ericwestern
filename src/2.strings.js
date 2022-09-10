@@ -23,6 +23,7 @@ function capitalize(str) {
 function splitString(str, splitAt = `,`) {
   return str.split(splitAt);
 }
+
 module.exports = {
   reverseString,
   capitalize,
